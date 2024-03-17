@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h2>情感分析</h2>
+    <form method="post">
+        <textarea name="text" rows="4" cols="50">{{ text }}</textarea>
+        <br>
+        <input type="submit" value="分析">
+    </form>
+    {% if sentiment %}
+    <h3>分析结果: {{ sentiment }}</h3>
+    {% endif %}
+</body>
+</html>
